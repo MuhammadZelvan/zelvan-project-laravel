@@ -1,79 +1,74 @@
-/* Reset margin dan padding untuk memastikan konsistensi antar browser */
-* {
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Mengatur body dengan warna gelap yang elegan */
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #000;
-    height: 100vh;
+    font-family: 'Helvetica', sans-serif;
+    background-color: #e9ecef;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
-/* Container untuk form dengan efek glowing sederhana */
-.container {
-    position: relative;
-    width: 350px;
+.login-box {
+    background-color: #ffffff;
     padding: 40px;
-    background-color: #2b2b2b;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(255, 0, 153, 0.5);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 360px;
+    box-sizing: border-box;
+}
+
+h2 {
     text-align: center;
-    color: #fff;
-}
-
-/* Formulir login */
-form#loginForm {
-    width: 100%;
-}
-
-form#loginForm h2 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     font-size: 24px;
-    color: #fff;
+    color: #343a40;
 }
 
-/* Input field */
-form#loginForm input[type="text"],
-form#loginForm input[type="password"] {
+input[type="text"],
+input[type="password"] {
     width: 100%;
     padding: 12px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 25px;
-    background: #3e3e3e;
-    font-size: 16px;
-    color: #fff;
+    margin-bottom: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #495057;
 }
 
-/* Tombol login */
-form#loginForm button[type="submit"] {
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #80bdff;
+    outline: none;
+}
+
+button {
     width: 100%;
     padding: 12px;
-    margin-top: 20px;
+    background-color: #007bff;
     border: none;
-    border-radius: 25px;
-    background-color: #ff0099;
-    color: white;
+    color: #ffffff;
     font-size: 16px;
     cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-/* Efek hover pada tombol */
-form#loginForm button[type="submit"]:hover {
-    background-color: #e60087;
+button:hover {
+    background-color: #0056b3;
 }
 
-/* Link tambahan */
-form#loginForm a {
+a {
     display: block;
-    margin-top: 15px;
-    color: #ff0099;
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff;
     text-decoration: none;
     font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
 }
