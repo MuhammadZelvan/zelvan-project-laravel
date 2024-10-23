@@ -16,5 +16,5 @@ Route::get('/welcome', function () {
 });
 
 Route::get('/about', function () {
-    return "Tentang Que"; //hanya menampilkan teks
+    return view('about'); //hanya menampilkan teks
 });

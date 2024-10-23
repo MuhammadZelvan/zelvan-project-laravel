@@ -1,24 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="asset/Coding/login.css">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  @vite('resources/css/app.css')
 </head>
-<body>
-    <form id="loginForm">
-        <div>
-            <label for="username">Username :</label>
-            <input type="text" name="username" id="username">
+<body class="flex items-center justify-center min-h-screen bg-sky-950">
+    <form id="loginForm" class="bg-white p-6 rounded shadow-md w-96">
+        <h2 class="text-2xl font-bold mb-6 text-center">Login</h2>
+        <div class="mb-4">
+            <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+            <input type="text" name="username" id="username" class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-500" required>
         </div>
-        <div>
-            <label for="password">Password :</label>
-            <input type="password" name="password" id="password"> 
+        <div class="mb-4">
+            <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+            <input type="password" name="password" id="password" class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-500" required>
         </div>
-        <button type="submit">Log in</button>
+        <button type="submit" class="w-full bg-sky-950 text-white font-semibold py-2 rounded hover:bg-blue-600 transition duration-200">LOGIN</button>
     </form>
 
-    <script src="asset/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
