@@ -9,5 +9,6 @@
   <h1 class="text-3xl font-bold underline, text-neutral-50 px-10 bg-blue-950 text-center">
     About Me!
   </h1>
+<a href="{{ route('home') }}" class="text-1xl font-bold mb-4">Kembali</a>
 </body>
 </html>
