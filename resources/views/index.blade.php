@@ -48,7 +48,7 @@
           <a class="text-2xl" href="#"><i class="fab fa-twitter"></i></a>
           <a class="text-2xl" href="#"><i class="fab fa-github"></i></a>
         </div>
-        <button class="bg-blue-500 text-white px-6 py-2 rounded">Hear Me</button>
+        <a href="{{ route('login') }}" class="bg-blue-500 text-white px-6 py-2 rounded">Login</a>
       </div>
     </div>
   </div>

@@ -17,6 +17,7 @@
             <input type="password" name="password" id="password" class="mt-1 block w-full border border-gray-300 rounded-md p-2 focus:ring focus:ring-blue-500" required>
         </div>
         <button type="submit" class="w-full bg-sky-950 text-white font-semibold py-2 rounded hover:bg-blue-600 transition duration-200">LOGIN</button>
+        <a href="{{ route('home') }}" class="text-1xl font-bold mb-4">Kembali</a>
     </form>
 
     <script src="assets/js/script.js"></script>
